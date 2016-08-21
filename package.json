@@ -1,0 +1,50 @@
+{
+  "name": "react2048",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "npm run copy & webpack --env=dev",
+    "serve": "babel-node src/server.js --env=dev",
+    "wpServer": "node webpackServer.js --env=dev",
+    "copy": "copyfiles -f ./src/index.html ./dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "react-router": "^2.6.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "copyfiles": "^1.0.0",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.9.0",
+    "minimist": "^1.2.0",
+    "node-sass": "^3.8.0",
+    "open": "^0.0.5",
+    "postcss-loader": "^0.10.0",
+    "postcss-scss": "^0.1.9",
+    "precss": "^1.4.0",
+    "react-transform-hmr": "^1.0.4",
+    "resolve-url-loader": "^1.6.0",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-hot-middleware": "^2.12.2"
+  }
+}
